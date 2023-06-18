@@ -22,7 +22,7 @@ const categories = categoriesList.children;
 console.log(`Number of categories: ${categories.length}`);
 console.log('');
 
-for (let i = 0; i < categories.length; i++) {
+for (let i = 0; i < categories.length; i += 1) {
   const category = categories[i];
   const categoryName = category.firstElementChild.textContent.trim();
   const categoryItems = category.lastElementChild.children.length;
